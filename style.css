@@ -1,0 +1,160 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background: url(fern-7721323.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    right: 0px;
+}
+
+/* navigation bar  */
+.navbar{
+    display: grid;
+    height: 5rem;
+    width: 100%;
+    grid-template-columns: 100px 270px 675px 140px;
+    right: 0px;
+}
+.navbar::before{
+    content: "";
+    position: absolute;
+    height:5rem;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.45;
+    background-color: black;
+}
+#logo{
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+}
+#logo img{
+    height: 80px;
+    width: 80px;
+    filter: invert(100%) brightness(80%) saturate(100%); 
+}
+#name{
+    left:100px;
+    font-family: 'Michroma', sans-serif;
+    font-size: 2rem;
+    margin-top: 15px;
+    font-weight: bold;
+    color: white;
+}
+#list{
+    list-style: none;
+    display: grid;
+    padding: 15px;
+    margin: 15px;
+    grid-template-columns: repeat(4,150px);
+}
+#list li a{
+    color: whitesmoke;
+    text-decoration: none;
+    font-family: 'Macondo', cursive;
+    font-size: 1.4rem;
+    padding: 2px 17px;
+}
+#list li a:hover,#list li a.active{
+    background-color: white;
+    color: black;
+    border-radius: 40px;
+}
+#search{
+    position: relative;
+    height: 20px;
+    width: 230px;
+    margin-top: 28px;
+    font-size: 1rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border-radius: 30px;
+    border: 1px groove black;
+    padding: 5px 10px;
+}
+
+/* Mid section */
+
+.mid{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 150px;
+    left: 173px;
+    height: 250px;
+    width: 70%;
+    align-items: center;
+    justify-content: center;
+}
+
+.mid h1{
+    font-size: 2.5rem;
+    color: white;
+    font-family: 'Cinzel Decorative', cursive;
+}
+.mid p{
+    color: aliceblue;
+    padding: 2px 23px;
+    text-align: center;
+}
+.btn{
+    font-size: 1.2rem;
+    font-family: 'Macondo', cursive;
+    color: white;
+    padding: 4px 6px;
+    width: 130px;
+    border: 1.5px solid rgb(134, 241, 134);
+    border-radius: 40px;
+    background: transparent;
+    position: relative;
+    overflow: hidden;
+
+}
+span{
+    background: rgb(134, 241, 134);
+    height: 100%;
+    width: 0;
+    border-radius: 40px;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    z-index: -1;
+    transition: 0.7s;
+}
+.btn:hover span{
+    width: 100%;
+
+}
+.btn:hover{
+    border: none;
+}
+
+/* scroll section */
+.scroll{
+    border: 1px solid white;
+    display: flex;
+    position: absolute;
+    flex-direction: row;
+    top: 450px;
+    left: 100px;
+    width: 1120px;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+}
+.box{
+    border: 2px solid red;
+    flex-basis: 350px;
+    height: 280px;
+    margin: 10px;
+    color:antiquewhite;
+}
+.heading{
+    color: white;
+    font-size: 4.5rem;
+    position: relative;
+    top: 386px;
+    left: 430px;
+    font-family: 'Cinzel Decorative', cursive;
+}
+
